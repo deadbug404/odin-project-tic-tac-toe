@@ -1,0 +1,51 @@
+html, body {
+    height:100% ;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: #1B1212;
+    color: white;
+    padding: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container .menu{
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+}
+
+.container .menu button{
+    margin-top: 10px;
+    border: none;
+    width: 200px;
+    height: 30px;
+}
+
+.container .menu #startButton{
+    margin-top: 50px;
+}
+
+.container .menu button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
