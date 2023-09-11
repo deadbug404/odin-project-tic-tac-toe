@@ -33,19 +33,61 @@ body{
     height: 400px;
 }
 
-.container .menu button{
+.container .menu button,
+.player1WinMenu button,
+.player2WinMenu button{
     margin-top: 10px;
     border: none;
     width: 200px;
     height: 30px;
+    border-radius: 15px;
 }
 
 .container .menu #startButton{
     margin-top: 50px;
 }
 
-.container .menu button:hover{
+.container .menu button:hover,
+.player1WinMenu button:hover,
+.player2WinMenu button:hover{
     cursor: pointer;
     background-color: black;
     color: white;
+}
+
+.container .board{
+    background-color: black;
+    width: 480px;
+    height: 455px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    display: none;
+}
+
+.tile{
+    border: 1px solid #F5DEB3;
+    width: 150px;
+    height: 150px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 100px;
+}
+
+.tile:hover{
+    cursor: pointer;
+}
+
+.player1WinMenu,
+.player2WinMenu{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 20px;
 }
